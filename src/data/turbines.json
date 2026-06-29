@@ -1,0 +1,14 @@
+[
+  { "id": "T-01", "name": "North Row A1", "lastStatus": "ok", "lastChecked": "2026-06-28T06:42:00-05:00" },
+  { "id": "T-02", "name": "North Row A2", "lastStatus": "watch", "lastChecked": "2026-06-28T06:58:00-05:00" },
+  { "id": "T-03", "name": "North Row A3", "lastStatus": "ok", "lastChecked": "2026-06-28T07:10:00-05:00" },
+  { "id": "T-04", "name": "East Spur B1", "lastStatus": "ok", "lastChecked": "2026-06-28T07:21:00-05:00" },
+  { "id": "T-05", "name": "East Spur B2", "lastStatus": "down", "lastChecked": "2026-06-28T07:27:00-05:00" },
+  { "id": "T-06", "name": "East Spur B3", "lastStatus": "ok", "lastChecked": "2026-06-28T07:34:00-05:00" },
+  { "id": "T-07", "name": "South Ridge C1", "lastStatus": "ok", "lastChecked": "2026-06-28T07:48:00-05:00" },
+  { "id": "T-08", "name": "South Ridge C2", "lastStatus": "ok", "lastChecked": "2026-06-28T07:55:00-05:00" },
+  { "id": "T-09", "name": "South Ridge C3", "lastStatus": "watch", "lastChecked": "2026-06-28T08:03:00-05:00" },
+  { "id": "T-10", "name": "West Bend D1", "lastStatus": "ok", "lastChecked": "2026-06-28T08:16:00-05:00" },
+  { "id": "T-11", "name": "West Bend D2", "lastStatus": "ok", "lastChecked": "2026-06-28T08:24:00-05:00" },
+  { "id": "T-12", "name": "West Bend D3", "lastStatus": "ok", "lastChecked": "2026-06-28T08:31:00-05:00" }
+]
