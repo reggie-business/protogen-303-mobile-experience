@@ -42,7 +42,7 @@ function openCheckIn(id: string): void {
 
 <template>
   <section>
-    <v-app-bar color="appbar" flat elevation="2">
+    <v-app-bar color="appbar" density="compact" flat elevation="1">
       <v-app-bar-title class="brand-wrap">
         <img src="/leaf-icon.svg" alt="mega-blade.io logomark" class="brand-mark" />
         <span class="view-title text-h5 font-weight-bold brand-wordmark">mega-blade.io</span>
@@ -80,13 +80,9 @@ function openCheckIn(id: string): void {
           class="turbine-row mb-3"
           rounded="lg"
           color="primary"
-          :base-color="turbine.checked ? 'surface' : 'background'"
+          :base-color="'surface'"
           @click="openCheckIn(turbine.id)"
         >
-          <template #prepend>
-            <v-icon :color="turbine.lastStatus" icon="mdi-circle" size="12" class="me-3" />
-          </template>
-
           <v-list-item-title class="turbine-id">
             {{ turbine.id }}
           </v-list-item-title>
@@ -95,10 +91,10 @@ function openCheckIn(id: string): void {
           <template #append>
             <v-chip
               v-if="turbine.checked"
-              color="primary"
+              color="secondary"
               size="small"
               variant="outlined"
-              class="font-weight-bold me-2"
+              class="font-weight-bold me-2 done-pill"
             >
               Done
             </v-chip>
@@ -119,9 +115,14 @@ function openCheckIn(id: string): void {
 
 <style scoped>
 .progress-readout {
-  color: rgb(var(--v-theme-on-appbar));
+  color: rgb(var(--v-theme-ink));
   min-width: 130px;
   text-align: right;
+  border: 1px solid rgba(20, 52, 43, 0.18);
+  border-radius: 999px;
+  background: rgba(244, 248, 243, 0.88);
+  font-weight: 700;
+  padding: 4px 10px;
 }
 
 .brand-wrap {
@@ -168,6 +169,17 @@ function openCheckIn(id: string): void {
   min-height: 56px;
   background: rgb(var(--v-theme-surface));
   border: 1px solid rgba(20, 52, 43, 0.08);
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+.turbine-row:hover,
+.turbine-row:focus-visible {
+  background: #f3f8f0;
+}
+
+.turbine-row:active {
+  background: #ecf4e8;
+  border-color: rgba(76, 147, 76, 0.3);
 }
 
 .turbine-id {
@@ -183,5 +195,9 @@ function openCheckIn(id: string): void {
   font-weight: 600;
   line-height: 1.3;
   opacity: 1;
+}
+
+.done-pill {
+  background: rgba(83, 165, 72, 0.08);
 }
 </style>

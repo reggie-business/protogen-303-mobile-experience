@@ -56,7 +56,7 @@ function submitCheckIn(): void {
 
 <template>
   <section>
-    <v-app-bar color="appbar" flat elevation="2">
+    <v-app-bar color="appbar" density="compact" flat elevation="1">
       <v-btn icon="mdi-arrow-left" color="on-appbar" variant="text" @click="router.push('/')" />
       <v-app-bar-title class="title-wrap">
         <div class="view-title text-h5 font-weight-bold turbine-title">{{ turbineId }}</div>

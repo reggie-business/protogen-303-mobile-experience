@@ -10,7 +10,7 @@ const vuetify = createVuetify({
       fieldLight: {
         dark: false,
         colors: {
-          background: '#F8FAF8',
+          background: '#F4F8F3',
           surface: '#FFFFFF',
           'on-surface': '#14342B',
           primary: '#4C934C',
@@ -19,8 +19,8 @@ const vuetify = createVuetify({
           watch: '#FFC300',
           down: '#D64545',
           ink: '#14342B',
-          appbar: '#14342B',
-          'on-appbar': '#FFFFFF',
+          appbar: '#4C934C',
+          'on-appbar': '#F8FCF7',
         },
       },
     },

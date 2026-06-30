@@ -16,7 +16,7 @@
 
 body {
   margin: 0;
-  background: radial-gradient(circle at top center, #ffffff 0%, #edf5ef 100%);
+  background: radial-gradient(circle at top center, #fbfdfb 0%, #eaf3e7 100%);
   color: #14342b;
 }
 
@@ -32,7 +32,7 @@ body {
   width: min(100%, 430px);
   margin: 0 auto;
   min-height: 100svh;
-  background: #f8faf8;
+  background: #f4f8f3;
   border-inline: 1px solid #d8e4da;
 }
 
