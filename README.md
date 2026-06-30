@@ -1,4 +1,4 @@
-# mega-blade.io
+# Turbine Trackr
 
 A wind-farm field tech checks in at each turbine on a round: set status, optionally add a photo or note, submit, and move on one-handed.
 
