@@ -44,8 +44,8 @@ function openCheckIn(id: string): void {
   <section>
     <v-app-bar color="appbar" density="compact" flat elevation="1">
       <v-app-bar-title class="brand-wrap">
-        <img src="/megablade-mark.svg" alt="mega-blade.io logomark" class="brand-mark" />
-        <span class="view-title text-h5 font-weight-bold brand-wordmark">mega-blade.io</span>
+        <v-icon icon="mdi-power" size="26" class="brand-mark brand-icon" aria-hidden="true" />
+        <span class="view-title text-h5 font-weight-bold brand-wordmark">Turbine Trackr</span>
       </v-app-bar-title>
       <template #append>
         <div class="progress-readout text-subtitle-1">
@@ -135,6 +135,10 @@ function openCheckIn(id: string): void {
   width: 26px;
   height: 26px;
   flex: 0 0 auto;
+}
+
+.brand-icon {
+  color: rgb(var(--v-theme-on-appbar));
 }
 
 .brand-wordmark {

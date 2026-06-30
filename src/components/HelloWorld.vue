@@ -11,7 +11,7 @@ const count = ref(0)
     <div class="hero">
       <img :src="heroImg" class="base" width="170" height="179" alt="" />
       <img :src="vueLogo" class="framework" alt="Vue logo" />
-      <img src="/megablade-mark.svg" class="vite" alt="mega-blade.io logo" />
+      <img src="/favicon.svg" class="vite" alt="Turbine Trackr logo" />
     </div>
     <div>
       <h1>Get started</h1>
@@ -34,7 +34,7 @@ const count = ref(0)
       <ul>
         <li>
           <a href="https://vite.dev/" target="_blank">
-            <img class="logo" src="/megablade-mark.svg" alt="" />
+            <img class="logo" src="/favicon.svg" alt="" />
             Explore Vite
           </a>
         </li>
