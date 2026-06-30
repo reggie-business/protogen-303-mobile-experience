@@ -42,8 +42,11 @@ function openCheckIn(id: string): void {
 
 <template>
   <section>
-    <v-app-bar color="surface" flat elevation="2">
-      <v-app-bar-title class="view-title text-h4 font-weight-bold">Rounds</v-app-bar-title>
+    <v-app-bar color="appbar" flat elevation="2">
+      <v-app-bar-title class="brand-wrap">
+        <img src="/leaf-icon.svg" alt="mega-blade.io logomark" class="brand-mark" />
+        <span class="view-title text-h5 font-weight-bold brand-wordmark">mega-blade.io</span>
+      </v-app-bar-title>
       <template #append>
         <div class="progress-readout text-subtitle-1">
           {{ progress.checked }} of {{ progress.total }} checked
@@ -116,9 +119,25 @@ function openCheckIn(id: string): void {
 
 <style scoped>
 .progress-readout {
-  color: rgb(var(--v-theme-on-surface));
+  color: rgb(var(--v-theme-on-appbar));
   min-width: 130px;
   text-align: right;
+}
+
+.brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mark {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 auto;
+}
+
+.brand-wordmark {
+  color: rgb(var(--v-theme-on-appbar));
 }
 
 .route-list {
@@ -128,13 +147,13 @@ function openCheckIn(id: string): void {
 }
 
 .completion-banner {
-  border: 1px solid rgba(27, 138, 90, 0.28);
+  border: 1px solid rgba(83, 165, 72, 0.28);
 }
 
 .completion-title {
   font-size: 18px;
   font-weight: 700;
-  color: #1b8a5a;
+  color: #53a548;
   line-height: 1.25;
 }
 
@@ -142,24 +161,24 @@ function openCheckIn(id: string): void {
   margin-top: 2px;
   font-size: 15px;
   font-weight: 600;
-  color: #2f4f3f;
+  color: #2c5245;
 }
 
 .turbine-row {
   min-height: 56px;
   background: rgb(var(--v-theme-surface));
-  border: 1px solid rgba(22, 25, 28, 0.08);
+  border: 1px solid rgba(20, 52, 43, 0.08);
 }
 
 .turbine-id {
-  color: #16191c;
+  color: #14342b;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.2;
 }
 
 .turbine-name {
-  color: #5a6066;
+  color: #4f5f5a;
   font-size: 15px;
   font-weight: 600;
   line-height: 1.3;

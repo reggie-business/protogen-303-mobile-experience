@@ -56,10 +56,10 @@ function submitCheckIn(): void {
 
 <template>
   <section>
-    <v-app-bar color="surface" flat elevation="2">
-      <v-btn icon="mdi-arrow-left" variant="text" @click="router.push('/')" />
+    <v-app-bar color="appbar" flat elevation="2">
+      <v-btn icon="mdi-arrow-left" color="on-appbar" variant="text" @click="router.push('/')" />
       <v-app-bar-title class="title-wrap">
-        <div class="view-title text-h5 font-weight-bold">{{ turbineId }}</div>
+        <div class="view-title text-h5 font-weight-bold turbine-title">{{ turbineId }}</div>
         <div class="text-body-2 title-subtitle">
           {{ turbine?.name ?? 'Unknown turbine' }}
           <span v-if="turbine" class="mx-1">•</span>
@@ -141,8 +141,12 @@ function submitCheckIn(): void {
   justify-content: center;
 }
 
+.turbine-title {
+  color: rgb(var(--v-theme-on-appbar));
+}
+
 .title-subtitle {
-  color: #5a6066;
+  color: rgba(255, 255, 255, 0.88);
   line-height: 1.25;
 }
 
@@ -151,7 +155,7 @@ function submitCheckIn(): void {
 }
 
 .section-label {
-  color: #30363c;
+  color: #234136;
   font-weight: 600;
 }
 
@@ -164,7 +168,7 @@ function submitCheckIn(): void {
 .status-card {
   min-height: 72px;
   border-width: 2px;
-  border-color: rgba(22, 25, 28, 0.22);
+  border-color: rgba(20, 52, 43, 0.24);
   cursor: pointer;
 }
 
@@ -184,7 +188,7 @@ function submitCheckIn(): void {
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 0.01em;
-  color: #16191c;
+  color: #14342b;
 }
 
 .status-card-selected .status-label {
@@ -203,8 +207,8 @@ function submitCheckIn(): void {
   transform: translateX(-50%);
   width: min(100%, 430px);
   padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
-  background: linear-gradient(to top, #f7f8f8 70%, rgba(247, 248, 248, 0.65) 100%);
-  border-top: 1px solid rgba(22, 25, 28, 0.12);
+  background: linear-gradient(to top, #f8faf8 70%, rgba(248, 250, 248, 0.65) 100%);
+  border-top: 1px solid rgba(20, 52, 43, 0.12);
 }
 
 .submit-btn {
